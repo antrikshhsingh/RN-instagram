@@ -1,0 +1,197 @@
+[
+  {
+    "id": "video1",
+    "createdAt": "19 December 2021",
+    "video": "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "antriksh"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  },
+  {
+    "id": "video2",
+    "createdAt": "19 December 2021",
+    "video": "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "second user"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "createdAt": "19 December 2021",
+    "images": [
+      "https://images.unsplash.com/photo-1642265291606-65b6d1442af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1642241215302-8dc9375dcb0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60"
+    ],
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "antriksh"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "createdAt": "19 December 2021",
+    "images": [
+      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
+      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+      "https://images.unsplash.com/photo-1642265291606-65b6d1442af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "antriksh"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "createdAt": "19 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "username": "antriksh"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "createdAt": "19 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      "username": "antriksh"
+    },
+    "nofComments": 11,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": "u1",
+          "username": "antriksh"
+        }
+      }
+    ]
+  }
+]

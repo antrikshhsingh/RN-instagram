@@ -1,16 +1,15 @@
-import {View, Text, Image} from 'react-native';
+import {View ,Image} from 'react-native';
 import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import CommentsScreen from '../screens/CommentsScreen/CommentsScreen';
-import ProfileScreen from '../screens/ProfileScreen/ProfileScreen';
 import instagram from '../assets/instagram.png';
 import BottomTabNavigator from './BottomTabNavigator';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import EditProfileScreen from '../screens/EditProfileScreen/EditProfileScreen';
-import PostUploadScreen from '../screens/PostUploadScreen/PostUploadScreen';
+import AuthStackNavigator from './AuthStackNavigator';
+
 const Stack = createNativeStackNavigator();
 
 export default Navigation = () => {
@@ -18,14 +17,20 @@ export default Navigation = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
+          initialRouteName:"Auth",
           headerShown: false,
           headerTitleAlign: 'left',
         }}>
-        <Stack.Screen
-          name="Home"
-          component={BottomTabNavigator}
-          options={{headerShown: false}}
-        />
+          <Stack.Screen
+            name="Auth"
+            component={AuthStackNavigator}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Home"
+            component={BottomTabNavigator}
+            options={{headerShown: false}}
+          />
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}

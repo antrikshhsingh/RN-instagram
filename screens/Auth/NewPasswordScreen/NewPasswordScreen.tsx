@@ -6,6 +6,8 @@ import SocialSignInButtons from '../components/SocialSignInButtons';
 import {useNavigation} from '@react-navigation/native';
 import {useForm} from 'react-hook-form';
 import {NewPasswordNavigationProp} from '../../../types/navigation';
+import { Alert } from 'react-native';
+import { Auth } from 'aws-amplify';
 
 type NewPasswordType = {
   username: string;
@@ -17,10 +19,21 @@ const NewPasswordScreen = () => {
   const {control, handleSubmit} = useForm<NewPasswordType>();
 
   const navigation = useNavigation<NewPasswordNavigationProp>();
+  const [loading,setLoading] = useState(false);
 
-  const onSubmitPressed = (data: NewPasswordType) => {
-    console.warn(data);
-    navigation.navigate('Sign in');
+  const onSubmitPressed = async({username,code,password}: NewPasswordType) => {
+    if(loading){
+      return;
+    }
+    setLoading(true)
+    try {
+      await Auth.forgotPasswordSubmit(username,code,password)
+      navigation.navigate('Sign in');
+    } catch (error) {
+      Alert.alert('Error',error.message);
+      
+    }
+    // console.warn(data);
   };
 
   const onSignInPress = () => {

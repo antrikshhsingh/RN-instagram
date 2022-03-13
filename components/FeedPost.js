@@ -29,6 +29,10 @@ const FeedPost = ({post, isVisible}) => {
     navigation.navigate('Profile', {userId: post.user.id});
   };
 
+  const onNavigateToComments = ()=>{
+    navigation.navigate('comments',{postId:post.id})
+  }
+
   const toggle = () => {
     // setisDescriptionExpanded(!isDescriptionExpanded);
     setisDescriptionExpanded(e => {
@@ -124,7 +128,7 @@ const FeedPost = ({post, isVisible}) => {
         </Text>
 
         {/* COMMENT */}
-        <Text style={{marginTop: 5}}>View all {post.nofComments} comments</Text>
+        <Text onPress={onNavigateToComments} style={{marginTop: 5}}>View all {post.nofComments} comments</Text>
         {post.comments.map(comment => (
           <Comment key={comment.id} comment={comment} />
         ))}

@@ -18,15 +18,15 @@ export default Navigation = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: true,
+          headerShown: false,
           headerTitleAlign: 'left',
         }}>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Home"
           component={BottomTabNavigator}
           options={{headerShown: false}}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
           options={{
@@ -35,9 +35,7 @@ export default Navigation = () => {
             headerTitle: props => <LogoTitle {...props} />,
           }}
         />
-        <Stack.Screen name="Profile" component={ProfileScreen} /> */}
-        {/* <Stack.Screen name="EditProfile" component={EditProfileScreen} /> */}
-        <Stack.Screen name="PostUploadScreen" component={PostUploadScreen} />
+        <Stack.Screen name="comments" component={CommentsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

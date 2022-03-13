@@ -3,8 +3,12 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 import user from '../../assets/user.json';
 
 import Button from '../../components/Button';
+import navigation from '../../navigation/navigation';
+import { useNavigation } from '@react-navigation/core';
+import {Auth} from 'aws-amplify';
 
 const ProfileHeader = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.root}>
       <View style={styles.headerRow}>
@@ -29,7 +33,10 @@ const ProfileHeader = () => {
       {/* buttons */}
       <Text style={styles.name}>{user.name}</Text>
       <Text style={styles.bio}>{user.bio}</Text>
-      <Button text={'Edit Profile'} />
+      <View style={{flexDirection:'row',justifyContent:'space-around'}}>
+      <Button text={'Edit Profile'} onPress={()=>navigation.navigate('EditProfile')} />
+      <Button text={'Signout'} onPress={()=>Auth.signOut()} />
+      </View>
     </View>
   );
 };
